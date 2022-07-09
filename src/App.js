@@ -1,11 +1,8 @@
 import "./App.css";
+import WhatWeDo from "./Components/WhatWeDo/WhatWeDo";
 
 function App() {
-  return (
-    <div className="App">
-      <h2>HELLO FROM SHAHAT HELLO gello</h2>
-    </div>
-  );
+  return <div className="App"></div>;
 }
 
 export default App;
