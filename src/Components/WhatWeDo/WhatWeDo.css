@@ -1,0 +1,13 @@
+.splide__slide.is-active img {
+  z-index: 10;
+  border: 20px solid #33d687;
+}
+
+#splideContainer {
+  padding: 0;
+}
+
+.whatWeDoContainer {
+  background-color: #2a334e;
+  padding: 105px 0px;
+}
