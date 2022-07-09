@@ -12,7 +12,27 @@ import "@splidejs/react-splide/css";
 const WhatWeDo = () => {
   return (
     <div className="whatWeDoContainer">
-      <div>
+      <div className="whatWeDoUpperPart text-white">
+        <div className="hero max-h-screen">
+          <div className="heroContent">
+            <div className="lg:text-left">
+              <p className="text-[14px] font-semibold">WHAT WE DO</p>
+              <p className="text-[43px] leading-[125%]">
+                Quality Reability With 100% <br /> Setisfaction
+              </p>
+            </div>
+            <div className="max-w-lg">
+              <p className="text-[16px] leading-[120%] whatWeDoParagraph">
+                Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
+                Risus commodo viverra maecenas accumsan
+                <span className="text-white"> View More Portfolio</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="whatWeDoLowerPart">
         <Splide
           id="splideContainer"
           options={{
