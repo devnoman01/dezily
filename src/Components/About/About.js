@@ -3,10 +3,10 @@ import img from '../../images/about/about.png';
 
 const About = () => {
     return (
-        <section>
-            <div>
-                <figure>
-                    <img src={img} alt="about" />
+        <section className='p-3 lg:p-20 grid grid-cols-1 lg:grid-cols-2 gap-3'>
+            <div className='w-full'>
+                <figure >
+                    <img className='w-full' src={img} alt="about" />
                 </figure>
             </div>
             <div>
