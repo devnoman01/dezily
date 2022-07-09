@@ -1,11 +1,10 @@
 import React from 'react';
 import img from '../../images/about/about.png';
+import TableRow from './TableRow';
 import Treatment from './Treatment';
 // const primary = '#33D687';
 // const secondary = '#2A334E';
-const tikIcon = <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="#33D687">
-    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-</svg>;
+
 
 const transplante = {
     name: "Heart Transplante",
@@ -38,35 +37,18 @@ const About = () => {
 
                 </div>
                 <hr className='my-5' />
-                <table>
-                    <tr className='flex items-center space-x-4'>
-                        <td>{tikIcon}</td>
-                        <td>
-                            <span>Breathing difficulties can be caused by many different conditions.
-                            </span>
-                        </td>
-                    </tr>
-                    <tr className='flex items-center space-x-4'>
-                        <td>{tikIcon}</td>
-                        <td>
-                            <span>Breathing difficulty may be health issue needs medical attention..
-                            </span>
-                        </td>
-                    </tr>
-                    <tr className='flex items-center space-x-4'>
-                        <td>{tikIcon}</td>
-                        <td>
-                            <span>You should discuss any breathing concerns with your doctor.
-                            </span>
-                        </td>
-                    </tr>
+                <table className='my-5'>
+                    <TableRow>Breathing difficulties can be caused by many different conditions.</TableRow>
+                    <TableRow>Breathing difficulty may be health issue needs medical attention.</TableRow>
+                    <TableRow>You should discuss any breathing concerns with your doctor.</TableRow>
+
                 </table>
 
-                <div>
-                    <button>
+                <div className='my-10 grid grid-cols-3 gap-3 w-2/3'>
+                    <button className='btn bg-[#2A334E] border-none rounded col-span-2 font-saira normal-case'>
                         Get Appointment
                     </button>
-                    <button>
+                    <button className='btn bg-[#33D687] border-none rounded-none font-saira normal-case'>
                         Contact us
                     </button>
 
