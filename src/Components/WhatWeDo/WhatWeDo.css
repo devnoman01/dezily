@@ -1,0 +1,38 @@
+.splide__slide.is-active img {
+  z-index: 10;
+  border: 20px solid #33d687;
+}
+
+#splideContainer {
+  padding: 0;
+}
+
+.whatWeDoContainer {
+  background-color: #2a334e;
+  padding: 50px 0px 90px 0px;
+}
+
+.heroContent {
+  z-index: 0;
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  max-width: 80rem;
+  gap: 6rem;
+}
+
+.whatWeDoUpperPart {
+  padding-bottom: 50px;
+}
+
+.whatWeDoParagraph {
+  color: rgb(255 255 255 / 60%);
+}
+
+@media screen and (max-width: 576px) {
+  .heroContent {
+    flex-direction: column;
+    padding: 0 10px;
+    gap: 20px;
+  }
+}
