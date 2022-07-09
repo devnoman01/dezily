@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import img from '../../images/about/about.png';
 import TableRow from './TableRow';
 import Treatment from './Treatment';
@@ -18,12 +18,18 @@ const sergery = {
 }
 
 const About = () => {
+    const [progress, setProgress] = useState(0)
     return (
         <section className='p-3 lg:p-20 grid grid-cols-1 lg:grid-cols-2 gap-3'>
             <div className='w-full'>
                 <figure >
                     <img className='w-full' src={img} alt="about" />
                 </figure>
+                <div className='bg-[#33D687] p-5 font-saira flex flex-col items-conter'>
+                    <div class="radial-progress text-[#fff] mb-3" style={{ "--value": "70", "--size": "8rem", "--thickness": "7px" }}>{progress}%</div>
+                    <p className='text-xl mb-3'>Satisfied</p>
+                    <p className='text-4xl font-semibold'>Happy Patients</p>
+                </div>
             </div>
             <div>
                 <p className={`text-[#33D687] font-bold mb-4`}>ABOUT Dezily</p>
@@ -45,7 +51,7 @@ const About = () => {
                 </table>
 
                 <div className='my-10 grid grid-cols-3 gap-3 w-2/3'>
-                    <button className='btn bg-[#2A334E] border-none rounded col-span-2 font-saira normal-case'>
+                    <button className='btn bg-[#2A334E] hover:bg-[#33D687] border-none rounded col-span-2 font-saira normal-case'>
                         Get Appointment
                     </button>
                     <button className='btn bg-[#33D687] border-none rounded-none font-saira normal-case'>
