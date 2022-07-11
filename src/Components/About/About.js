@@ -23,7 +23,7 @@ const About = () => {
     return (
         <section className='p-3 lg:p-20 grid grid-cols-1 lg:grid-cols-2 gap-3'>
             <div className='w-full relative'>
-                <figure >
+                <figure className='mb-5'>
                     <img className='w-full' src={img} alt="about" />
                 </figure>
                 <Satisfied />
