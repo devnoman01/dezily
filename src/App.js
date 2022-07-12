@@ -1,9 +1,8 @@
-import About from "./Components/About/About";
+import "./App.css";
+import WhatWeDo from "./Components/WhatWeDo/WhatWeDo";
 
 function App() {
-  return <div >
-    <About />
-  </div>;
+  return <div className="App"></div>;
 }
 
 export default App;
